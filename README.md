@@ -48,7 +48,7 @@ Expected Outcomes
 - Identification of key factors influencing real estate prices.
 - Development of preliminary insights through statistical analysis and visualizations.
 - Foundation for building predictive models to forecast real estate prices.
-- 
+
 Future Steps
 - Apply machine learning models to develop price prediction models.
 - Evaluate and refine the models based on performance metrics.
