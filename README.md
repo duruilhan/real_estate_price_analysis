@@ -53,10 +53,10 @@ Progress Update (As of April 18)
 We have completed the exploratory data analysis (EDA) and conducted statistical hypothesis testing on the real estate dataset collected from Emlakjet. The following key steps were performed:
 - Descriptive statistics and data visualization (price distribution, area-price relationship, average price by number of rooms, etc.)
 - Correlation analysis to identify relationships between key variables
-Hypothesis testing using Pearson correlation and ANOVA:
-- Number of rooms vs. price
-- Building age vs. price
-- Floor level vs. price
+- Hypothesis testing using Pearson correlation and ANOVA:
+- - Number of rooms vs. price
+- - Building age vs. price
+- - Floor level vs. price
 These analyses provide valuable insights into which features significantly influence housing prices, and they form the foundation for upcoming machine learning modeling.
 
 Future Steps
