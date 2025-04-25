@@ -26,7 +26,7 @@ It does not contain any personal or sensitive data and complies with data privac
 
 ---
 
-## 🛠Method and Plan
+## Method and Plan
 
 ### Data Collection and Preparation
 - Load and explore the real dataset to understand its structure.
