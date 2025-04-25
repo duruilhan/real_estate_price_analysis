@@ -1,77 +1,77 @@
-DSA210 Project Proposal - Real Estate Price Analysis
+# DSA210 Project Proposal - Real Estate Price Analysis
 
-Motivation
+## Motivation
 
-The real estate sector is a vital part of the economy and is significantly influenced by factors such as economic trends, social behavior, and government regulations. In recent years, significant fluctuations in real estate prices have been observed, particularly influenced by macroeconomic changes and urban development trends. Analyzing the factors affecting these price changes and predicting future prices can offer valuable insights for investors, policymakers, and real estate professionals. This project aims to explore the key determinants of housing prices and develop predictive models to forecast future prices.
+The real estate sector is a vital part of the economy and is significantly influenced by factors such as economic trends, social behavior, and government regulations. In recent years, significant fluctuations in real estate prices have been observed, particularly influenced by macroeconomic changes and urban development trends. Analyzing the factors affecting these price changes and predicting future prices can offer valuable insights for investors, policymakers, and real estate professionals.
 
-Data Source
+This project aims to explore the key determinants of housing prices and develop predictive models to forecast future prices.
 
-The dataset utilized in this project is collected from Emlakjet, a prominent real estate platform, covering listings between September 19-23, 2023. The dataset comprises approximately 155,000 entries, including critical attributes such as:
+---
+
+## Data Source
+
+The dataset used in this project is a **real-world dataset** collected from [Emlakjet](https://www.emlakjet.com/), a major real estate platform in Turkey. The data was originally compiled and shared on [Kaggle](https://www.kaggle.com/datasets/egeakyol/real-estate-in-istanbul-turkey-emlakjet), and contains detailed information about listings in Istanbul.
+
+The dataset includes the following features:
 
 - Location (city, district, neighborhood)
 - Number of Rooms
 - Area (square meters)
 - Building Age
 - Price
-- Type of Property (apartment, detached house, etc.)
 - Floor Information
 - Number of Bathrooms
 
-The dataset is publicly available and was accessed from reputable online data platforms. Data privacy and ethical considerations were taken into account, ensuring that no personal or sensitive information is included.
+It does not contain any personal or sensitive data and complies with data privacy standards.
 
-METHOD AND PLAN
+---
 
-Data Collection and Preparation
+## 🛠Method and Plan
 
-- Conduct initial data exploration to understand structure and identify potential issues.
-- Perform data cleaning, including handling missing values, correcting inconsistencies, and transforming categorical data if necessary.
-- Conduct feature engineering to create relevant variables that could enhance the model's performance.
+### Data Collection and Preparation
+- Load and explore the real dataset to understand its structure.
+- Clean the data: handle missing values, unify formats, drop or impute inconsistencies.
+- Create additional features (e.g., numerical room count, grouped building age).
 
-Exploratory Data Analysis (EDA)
-
+### Exploratory Data Analysis (EDA)
 - Generate descriptive statistics and visualize key features of the data.
 - Identify trends and patterns that may influence housing prices.
-- Investigate correlations between variables to identify significant factors.
+- Investigate correlations between variables to identify significant predictors.
 
-Modeling Approach (Future Steps)
+### Hypothesis Testing
+- Perform statistical tests to validate assumptions, including:
+  - Is there a correlation between number of rooms and price?
+  - Are newer buildings more expensive?
+  - Does floor level affect price?
 
-- Apply various regression models such as Linear Regression, Random Forest, and XGBoost.
-- Evaluate model performance using appropriate metrics like Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE).
-- Optimize the selected models through hyperparameter tuning.
+### Modeling Approach (Future Steps)
+- Apply machine learning models such as:
+  - Linear Regression
+  - Random Forest
+  - XGBoost
+- Evaluate model performance using:
+  - Mean Absolute Error (MAE)
+  - Root Mean Squared Error (RMSE)
+- Use hyperparameter tuning and cross-validation for optimization.
 
-Ethical Considerations
+---
 
-- The dataset used is publicly available and does not contain personal data.
-- The project ensures compliance with data privacy standards.
-- AI tools used for analysis will be transparently documented.
+## Ethical Considerations
 
-Potential Challenges and Mitigations
+- The dataset is publicly available and contains no personal identifiers.
+- The project adheres to ethical AI practices and responsible data use.
+- All tools and models used will be transparently documented.
 
-- Data Quality Issues: Address missing or inconsistent data during the cleaning phase.
-- Model Bias: Ensure the model does not overfit and generalizes well to new data by applying cross-validation techniques.
-- Ethical Risks: Maintain transparency regarding data sources and modeling processes.
+---
 
-Expected Outcomes
+## Potential Challenges and Mitigations
 
-- Identification of key factors influencing real estate prices.
-- Development of preliminary insights through statistical analysis and visualizations.
-- Foundation for building predictive models to forecast real estate prices.
+| Challenge            | Mitigation                                                  |
+|----------------------|-------------------------------------------------------------|
+| Data Quality Issues  | Apply data cleaning and imputation where necessary          |
+| Model Bias           | Use validation, avoid overfitting, test on diverse samples  |
+| Interpretability     | Include interpretable models and visualizations             |
 
-Progress Update (As of April 18)
+---
 
-- We have completed the exploratory data analysis (EDA) and conducted statistical hypothesis testing on the real estate dataset collected from Emlakjet. The following key steps were performed:
-- - Descriptive statistics and data visualization (price distribution, area-price relationship, average price by number of rooms, etc.)
-- - Correlation analysis to identify relationships between key variables
-- - Hypothesis testing using Pearson correlation and ANOVA:
-- - - Number of rooms vs. price
-- - - Building age vs. price
-- - - Floor level vs. price
-These analyses provide valuable insights into which features significantly influence housing prices, and they form the foundation for upcoming machine learning modeling.
-
-Future Steps
-
-- Apply machine learning models to develop price prediction models.
-- Evaluate and refine the models based on performance metrics.
-- Prepare comprehensive reporting and visual presentations for final submission.
-
-This project is expected to provide valuable insights into the real estate market trends and serve as a foundation for developing predictive models. The findings can support stakeholders in making informed decisions regarding property investments.
+This project is expected to offer valuable insights into Istanbul’s real estate market and provide a strong foundation for predictive analytics in housing price estimation.
