@@ -75,3 +75,26 @@ It does not contain any personal or sensitive data and complies with data privac
 ---
 
 This project is expected to offer valuable insights into Istanbul’s real estate market and provide a strong foundation for predictive analytics in housing price estimation.
+
+## Insights from EDA and Hypothesis Testing
+
+## Exploratory Data Analysis (EDA)
+- The distribution of real estate prices is highly right-skewed, indicating that most listings are concentrated at lower price ranges while a few extremely high-priced listings stretch the tail. To improve interpretability, a log transformation was applied.
+- A positive correlation was observed between the size of the property (in square meters) and its price. Larger properties tend to have higher prices.
+- Listings with more rooms generally exhibit higher average prices. In particular, 3+1 and 4+1 apartments are priced significantly higher than 1+1 or 2+1 units.
+- Newer buildings (0–5 years old) are associated with noticeably higher prices compared to older properties. This trend suggests that buyers are willing to pay a premium for new construction.
+- The number of bathrooms also shows a mild association with price, with homes featuring more bathrooms tending to be more expensive.
+- However, floor level did not exhibit a clear visual pattern or correlation with price.
+
+## Hypothesis Testing Results
+- Number of Rooms vs. Price:
+- - Pearson correlation test showed a statistically significant positive relationship (p < 0.05). As the number of rooms increases, so does the price.
+
+- Building Age vs. Price:
+- - ANOVA test results indicate that building age has a significant effect on housing prices (p < 0.05). There are meaningful differences in average prices across different building age groups.
+
+- Floor Level vs. Price:
+- - ANOVA test showed no statistically significant effect (p ≈ 0.85), suggesting that floor level does not significantly influence housing prices in this dataset.
+
+## Summary
+These findings help identify key factors influencing real estate prices in Istanbul. While features like size, number of rooms, building age, and bathrooms significantly affect price, floor level appears to have minimal impact. These insights can serve as a foundation for further predictive modeling and price estimation in real estate markets.
